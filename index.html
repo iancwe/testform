@@ -294,7 +294,9 @@ input[type='text'], input:not([type]), textarea {
 <div class="ss-required-asterisk" aria-hidden="true">*Required</div></div></div>
 <div class="ss-form">
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSd2ZA_m6wJHJXv8ZK78jvy5dWyxThr-4DqBN83SiQD7yRz8rQ/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on" onsubmit="">
+<!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2ZA_m6wJHJXv8ZK78jvy5dWyxThr-4DqBN83SiQD7yRz8rQ/formResponse" method="POST" target="_self" autocomplete="on" onsubmit=""> -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://www.all-assured.co/';}"></iframe>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSd2ZA_m6wJHJXv8ZK78jvy5dWyxThr-4DqBN83SiQD7yRz8rQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 <ol role="list" class="ss-question-list" style="padding-left: 0;">
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
@@ -414,6 +416,7 @@ input[type='text'], input:not([type]), textarea {
 <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
 </tr></tbody></table></div></ol></form></div>
 <script type='text/javascript' src='/static/forms/client/js/3126553165-formviewer_prd__en_gb.js'></script>
+<script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
           _initFormViewer(
             "[100,null,[[[186272390,[[6,203,[\x229\x22]\n,\x22\x22]\n]\n]\n]\n]\n]\n");</script></div></body></html>
